@@ -1,0 +1,63 @@
+html body {
+	background-color:#4D4C4C;
+	font-family: Baloo Bhaijaan;
+
+}
+
+.title {
+	margin-left: 5%;
+	color: #FFB249;
+	font-size: 65px;
+}
+
+.butReg {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.header {
+	border-bottom: 2px solid #FFB249;
+}
+
+.inputSearch {
+	padding-top: 250px;
+	padding-bottom: 250px;
+
+}
+
+.inputResults {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+}
+
+.footer {
+	border-top: 2px solid #FFB249;
+	color: #FFB249;
+	text-align: center;
+	clear: both;
+	height: auto;
+}
+
+.fotoBodyIndex {
+		background-image: url(http://www.bestfon.info/images/joomgallery/originals/macro_16/macro_88_20130108_1361391134.jpg);
+		background-position: center center;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-size: cover;
+    	-moz-background-size: cover;
+    	-o-background-size: cover;
+    	font-family: "Asap Condensed";
+    	font-size: 18px;
+
+}
+
+.inputLine, .searchButton{
+	opacity: 0.8;
+    filter: alpha(opacity=30);
+}
+
+img {
+	width: 60%;
+	
+}
