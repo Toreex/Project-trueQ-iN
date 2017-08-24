@@ -88,8 +88,8 @@ img {
 }
 
 .moreInfoImg {
-    width: 100%;
-  height: 500px !important;  
+    width: 50%;
+  height: 600px !important;  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -107,7 +107,7 @@ img {
 
 .subTitle {
     opacity: 0.7;
-    font-size: 35px;
+    font-size: 32px;
     background-color: #FFFFFF;    
     text-align: center;
 }
@@ -118,12 +118,34 @@ img {
     }
 }
 
+@media screen and (max-width: 736px) {
+    .titleResults {
+        display:none;
+    }
+}
+
 .perfilUser {
     margin-top: 5%;
 }
 
 .more-info {
     margin-top: 1%;
+}
+
+.imgPerfil {
+    margin-bottom: 5%;
+}
+
+.buttonChangePerfil {
+    margin-top: 2%;
+}
+
+.buttonsMyProducts {
+    text-align: center;
+}
+
+.buttonPerfilSeparate {
+    margin-bottom: 1%!important;
 }
 
 /*------------------------------CSS BACKGROUND IMG RANDOM--------------------------------------*/

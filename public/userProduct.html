@@ -24,101 +24,110 @@
                         <ul class="dropdown-menu">
                             <li><a href="http://localhost:3000/perfilUser.html">Ver perfil</a></li>
                             <li><a href="http://localhost:3000/userProduct.html">Subir producto</a></li>
-                            <li><a href="http://localhost:3000/user.html">Configurar perfil</a></li>
                             <li><a href="http://localhost:3000/index.html">Salir del Perfil</a></li>
                         </ul>
                 </div>
-                </div>              
+            </div>
     </header>
     <div class="upArticle container-fluid">
         <div class="row">
-        <div class="col-md-12">
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-file">
-                            </span>Nuevo producto...</a>
+            <div class="col-md-12">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <span class="glyphicon glyphicon-file">
+                            </span>Nuevo producto...
                         </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Titulo" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Descripcion" rows="5" required></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="category">
-                                            Categoria</label>
-                                        <select class="form-control" id="category">
-                                            <option>Quiero</option>
-                                            <option>Ofrezco</option>                                            
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="tags">
-                                            Tags</label>
-                                        <input type="text" class="form-control" id="tags" placeholder="Tags" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="well well-sm">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">Imagen para subir...</span>
-                                            <input type="text" class="form-control" placeholder="añadir ruta..." />
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Titulo" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Descripcion" rows="5" required></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="well well-sm well-primary">
-                                        <form class="form form-inline " role="form">
+                                <div class="row">
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" value="" placeholder="Date" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control">
-                                                <option>Draft</option>
-                                                <option>Published</option>
+                                            <label for="category">
+                                                Categoria</label>
+                                            <select class="form-control" id="category">
+                                                <option>Quiero</option>
+                                                <option>Ofrezco</option>
                                             </select>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-success btn-sm">
-                                                <span class="glyphicon glyphicon-floppy-disk"></span>Save</button>
-                                            <button type="button" class="btn btn-default btn-sm">
-                                                <span class="glyphicon glyphicon-eye-open"></span>Preview</button>
+                                            <label for="tags">
+                                                Tags</label>
+                                            <input type="text" class="form-control" id="tags" placeholder="Tags" />
                                         </div>
-                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="well well-sm">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Imagen para subir...</span>
+                                                <input type="text" class="form-control" placeholder="añadir ruta..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="well well-sm well-primary">
+                                            <form class="form form-inline " role="form">
+                                                <div class="form-group">
+                                                    <a href="http://localhost:3000/userIn.html" type="submit" class="btn btn-success btn-sm">
+                                                        <span class="glyphicon glyphicon"></span>Save</a>
+                                                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2">
+                                                        <span class="glyphicon glyphicon"></span>Preview</button>
+                                                    <div class="modal fade" id="myModal2" role="dialog">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    <h4 class="modal-title">Preview</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="thumbnail">
+                                                                        <img style="background-image: url(https://psmedia.playstation.com/is/image/psmedia/ps4-pro-screen-02-eu-06sep16?$MediaCarousel_SmallImage$)" src="" alt="">
+                                                                        <div class="caption">
+                                                                            <h3>Ps4 Pro</h3>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
+                                                                            <p><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/productInfo.html" class="btn btn-primary" role="button">Mas info</a></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>                
-        </div>
-    </div>
-    </div>
-    
-    <footer class="footer container-fluid">
-        <div class="row">
-            <div>
-                <h2>Dídac Tey Bosch</h2>
+                </div>
             </div>
         </div>
-    </footer>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <footer class="footer container-fluid">
+            <div class="row">
+                <div>
+                    <h2>Dídac Tey Bosch</h2>
+                </div>
+            </div>
+        </footer>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
