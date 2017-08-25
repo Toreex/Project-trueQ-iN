@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trueQ-iN APP</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,7 +15,7 @@
     <header class="header container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-6">
-                <h1 class="title">TrueQ-iN</h1>
+                <a href="/index.html"><h1 class="title">TrueQ-iN</h1></a>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-6">
                 <div class="container-fluid">
@@ -23,26 +24,41 @@
                         <ul class="dropdown-menu">
                             <li><a href="/perfilUser.html">Ver perfil</a></li>
                             <li><a href="/userProduct.html">Subir producto</a></li>
-                            <li><a href="/index.html">Salir del Perfil</a></li>
+                            <li><a href="/index.html">Salir</a></li>
                         </ul>
                 </div>
             </div>
     </header>
     <div class="more-info container-fluid">
         <div class="row">
-            <div class="col-lg-1 col-md-1 col-xs-1"></div>
-            <div class="col-lg-10 col-md-10 col-xs-10">
+            <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="thumbnail">
                     <img class="moreInfoImg" style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/61oN2OMOq9L._SX355_.jpg)" src="" alt="">
                     <div class="caption">
                         <h3>Unicornio hinchable</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
-                        <p><a href="#" class="btn btn-warning" role="button">Mensaje</a> <a href="#" class="btn btn-warning" role="button">Salir</a></p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon"></span>Mensaje</button>
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Enviar mensaje al usuario...</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <textarea rows="4" cols="45">At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.</textarea>
+                                    </div>
+                                    <button class="buttonMensaje btn btn-success">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-warning" role="button">Salir</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-1 col-md-1 col-xs-1"></div>
         </div>
+    </div>
     </div>
     <footer class="footer container-fluid">
         <div class="row">

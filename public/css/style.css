@@ -4,9 +4,6 @@ html body {
 
 }
 
-/*.bodyCarrusel {
-    height: 450px !important;
-}*/
 
 .title {
     margin-left: 5%;
@@ -146,6 +143,15 @@ img {
 
 .buttonPerfilSeparate {
     margin-bottom: 1%!important;
+}
+
+#select {
+    margin-bottom: 1%;
+}
+
+.buttonMensaje {
+    margin-bottom:2%!important;
+    margin-left: 5%;
 }
 
 /*------------------------------CSS BACKGROUND IMG RANDOM--------------------------------------*/
