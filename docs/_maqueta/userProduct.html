@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trueQ-iN APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-6">
+                <h1 class="title">TrueQ-iN</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-6">
+                <div class="container-fluid">
+                    <ul class="navbar-right">
+                        <a data-toggle="dropdown" class="btn-lg butEntReg btn btn-warning dropdown-toggle">Don Trueque85 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/perfilUser.html">Ver perfil</a></li>
+                            <li><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/userProduct.html">Subir producto</a></li>
+                            <li><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/user.html">Configurar perfil</a></li>
+                            <li><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/index.html">Salir del Perfil</a></li>
+                        </ul>
+                </div>
+                </div>              
+    </header>
+    <div class="upArticle container-fluid">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-file">
+                            </span>Nuevo producto...</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Titulo" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Descripcion" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="category">
+                                            Categoria</label>
+                                        <select class="form-control" id="category">
+                                            <option>Quiero</option>
+                                            <option>Ofrezco</option>                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="tags">
+                                            Tags</label>
+                                        <input type="text" class="form-control" id="tags" placeholder="Tags" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="well well-sm">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Imagen para subir...</span>
+                                            <input type="text" class="form-control" placeholder="añadir ruta..." />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="well well-sm well-primary">
+                                        <form class="form form-inline " role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="" placeholder="Date" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option>Draft</option>
+                                                <option>Published</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-success btn-sm">
+                                                <span class="glyphicon glyphicon-floppy-disk"></span>Save</button>
+                                            <button type="button" class="btn btn-default btn-sm">
+                                                <span class="glyphicon glyphicon-eye-open"></span>Preview</button>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+        </div>
+    </div>
+    </div>
+    
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div>
+                <h2>Dídac Tey Bosch</h2>
+            </div>
+        </div>
+    </footer>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

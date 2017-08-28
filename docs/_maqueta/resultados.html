@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trueQ-iN APP</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 class="title">TrueQ-iN</h1>
+            </div>
+            <div class="col-lg-4">
+            <div class="input-group">
+                <input class="inputResults form-control" type="" name="" placeholder="Busque otro producto...">
+                <span class="input-group-btn">
+                <button class="resultsButton searchButton btn btn-warning" type="button"><a href="resultados.html">Buscar</a></button>
+                </span>
+            </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="container-fluid">
+                    <button class="butEntReg2 btn btn-warning btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Entrar/Registro</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <br>
+                            <div class="bs-example bs-example-tabs">
+                                <ul id="myTab" class="nav nav-tabs">
+                                    <li class="active"><a href="#signin" data-toggle="tab">Entrar</a></li>
+                                    <li class=""><a href="#signup" data-toggle="tab">Registrar</a></li>
+                                    <li class=""><a href="#why" data-toggle="tab">Por que ?</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-body">
+                                <div id="myTabContent" class="tab-content">
+                                    <div class="tab-pane fade in" id="why">
+                                        <p>Necesitamos esta informacion para que el usuario pueda enviar mensajes al vendedor y tener un historial personal de su actividad en su perfil. Tenga la seguridad de que su información no será vendida, comercializada o dada a nadie.</p>
+                                        <p></p>
+                                        <br> Póngase en contacto con <a mailto:href="JoeSixPack@Sixpacksrus.com"></a>JoeSixPack@Sixpacksrus.com </a> para cualquier otra consulta.</p>
+                                    </div>
+                                    <div class="tab-pane fade active in" id="signin">
+                                        <form class="form-horizontal">
+                                            <fieldset>
+                                                <!-- Sign In Form -->
+                                                <!-- Text input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="userid">Alias:</label>
+                                                    <div class="controls">
+                                                        <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
+                                                    </div>
+                                                </div>
+                                                <!-- Password input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="passwordinput">Password:</label>
+                                                    <div class="controls">
+                                                        <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                                                    </div>
+                                                </div>
+                                                <!-- Multiple Checkboxes (inline) -->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="rememberme"></label>
+                                                    <div class="controls">
+                                                        <label class="checkbox inline" for="rememberme-0">
+                                                            <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me"> Remember me
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Button -->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="signin"></label>
+                                                    <div class="controls">
+                                                        <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="signup">
+                                        <form class="form-horizontal">
+                                            <fieldset>
+                                                <!-- Sign Up Form -->
+                                                <!-- Text input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="Email">Email:</label>
+                                                    <div class="controls">
+                                                        <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+                                                    </div>
+                                                </div>
+                                                <!-- Text input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="userid">Alias:</label>
+                                                    <div class="controls">
+                                                        <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+                                                    </div>
+                                                </div>
+                                                <!-- Password input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="password">Password:</label>
+                                                    <div class="controls">
+                                                        <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                                                        <em>1-8 Characters</em>
+                                                    </div>
+                                                </div>
+                                                <!-- Text input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+                                                    <div class="controls">
+                                                        <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+                                                    </div>
+                                                </div>
+                                                <!-- Multiple Radios (inline) -->
+                                                <br>
+                                                <div class="control-group">
+                                                    <label class="control-label" for="humancheck">Humanity Check:</label>
+                                                    <div class="controls">
+                                                        <label class="radio inline" for="humancheck-0">
+                                                            <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+                                                        <label class="radio inline" for="humancheck-1">
+                                                            <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+                                                    </div>
+                                                </div>
+                                                <!-- Button -->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="confirmsignup"></label>
+                                                    <div class="controls">
+                                                        <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <center>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="inputResults container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img style="background-image: url(https://psmedia.playstation.com/is/image/psmedia/ps4-pro-screen-02-eu-06sep16?$MediaCarousel_SmallImage$)" src="" alt="">
+                    <div class="caption">
+                        <h3>Ps4 Pro</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
+                        <p><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/productInfo.html" class="btn btn-primary" role="button">Mas info</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img style="background-image: url(http://www.three.co.uk/static/images/device_pages/MobileVersion/Apple/iPhone_6s_Plus/Space_Grey/desktop/1.jpg)" src="" alt="">
+                    <div class="caption">
+                        <h3>iPhone 6s</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
+                        <p><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/productInfo.html" class="btn btn-primary" role="button">Mas info</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/61oN2OMOq9L._SX355_.jpg)" src="" alt="">
+                    <div class="caption">
+                        <h3>Unicornio hinchable</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
+                        <p><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/productInfo.html" class="btn btn-primary" role="button">Mas info</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img style="background-image: url(http://www.todocapricho.es/WebRoot/ce_es/Shops/194994/4B60/2DAE/3137/E975/B652/C0A8/8008/8212/KEWPIE_hoppy.jpg)" src="" alt="">
+                    <div class="caption">
+                        <h3>Famosa muñeca Kewpie</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
+                        <p><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/productInfo.html" class="btn btn-primary" role="button">Mas info</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIMEs9TmnSbp-5QWUa_IihGGjCt6tqMHVAOgiCKKX-PN2EmjX)" src="" alt="">
+                    <div class="caption">
+                        <h3>Taladro</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
+                        <p><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/productInfo.html" class="btn btn-primary" role="button">Mas info</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRReUKXBV9h9n0ueWvl0bjj8Vtj11Zt_fAmZ7sPG_X0gKb92mVYNw)" src="" alt="">
+                    <div class="caption">
+                        <h3>Sofa chester</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?</p>
+                        <p><a href="file:///C:/Users/Didac/Proyecto%20final%20-%20TrueQ-iN/maqueta/productInfo.html" class="btn btn-primary" role="button">Mas info</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div>
+                <h2>Dídac Tey Bosch</h2>
+            </div>
+        </div>
+    </footer>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
