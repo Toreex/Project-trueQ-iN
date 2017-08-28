@@ -1,0 +1,59 @@
+extends layout
+
+block content
+
+    header.header.container-fluid
+            .row
+              .col-lg-6.col-md-6.col-xs-6
+                a(href='/')
+                  h1.title TrueQ-iN
+              |             
+              .col-lg-6.col-md-6.col-xs-6
+                .container-fluid
+                  ul.navbar-right
+                    a.btn-lg.butEntReg.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
+                      | Don Trueque85 
+                      b.caret
+                    |                         
+                    ul.dropdown-menu
+                      li
+                        a(href='perfilUser') Ver perfil
+                      |                             
+                      li
+                        a(href='userProduct') Subir producto
+                      |                             
+                      li
+                        a(href='/') Salir
+
+    .more-info.container-fluid
+        .row
+            .col-lg-12.col-md-12.col-xs-12
+              .thumbnail
+                img.moreInfoImg(style='background-image: url(https://images-na.ssl-images-amazon.com/images/I/61oN2OMOq9L._SX355_.jpg)', src='', alt='')
+                |                     
+                .caption
+                  h3 Unicornio hinchable
+                  |                         
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
+                  |                         
+                  button.btn.btn-warning(type='button', data-toggle='modal', data-target='#myModal')
+                    span.glyphicon.glyphicon
+                    | Mensaje
+                  |                         
+                  #myModal.modal.fade(role='dialog')
+                    .modal-dialog
+                      .modal-content
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal') &times;
+                          |                                         
+                          h4.modal-title Enviar mensaje al usuario...
+                        |                                     
+                        .modal-body
+                          textarea(rows='4', cols='45')
+                            | At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+                        |                                     
+                        button.buttonMensaje.btn.btn-success Enviar
+                  |                         
+                  a.btn.btn-warning(href='#', role='button') Salir
+                  p

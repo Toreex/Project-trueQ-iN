@@ -101,7 +101,7 @@ img {
 }
 
 .moreInfoImg {
-    width: 50%;
+    width: 100%;
   height: 600px !important;  
     background-repeat: no-repeat;
     background-size: cover;

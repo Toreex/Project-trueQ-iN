@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    
+    header.header.container-fluid
+      .row
+          .col-lg-6.col-md-6.col-xs-6
+            a(href='/')
+              h1.title TrueQ-iN
+          |             
+          .col-lg-6.col-md-6.col-xs-6
+            .container-fluid
+              a.butEntReg.btn.btn-warning.btn-lg(href='registrar') Registro
+              |                     
+              a.butEntReg.btn.btn-warning.btn-lg(href='entrar') Entrar
+
+    .container-fluid
+        .row
+            .divUser.col-md-12
+              form.form-horizontal(role='form')
+                fieldset
+                  legend Entrar a TrueQ-iN
+                  |                         
+                  .form-group
+                    label.col-sm-2.control-label(for='textinput') Alias
+                    |                             
+                    .col-sm-10
+                      input.form-control(type='text', placeholder='Alias...')
+                  |                         
+                  .form-group
+                    label.col-sm-2.control-label(for='textinput') Password
+                    |                             
+                    .col-sm-10
+                      input.form-control(type='password', placeholder='Password...')
+                  |                         
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .pull-right
+                        button.btn.btn-danger(type='submit') Cancelar
+                        |                                     
+                        a.btn.btn-success(href='userIn', type='submit') Entrar
