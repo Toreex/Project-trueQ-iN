@@ -10,20 +10,28 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
 </head>
 
-
 <body>
     <header class="header container-fluid">
         <div class="row">
             <div class="titleResults col-lg-4">
                 <a href="/index.html"><h1 class="title">TrueQ-iN</h1></a>
             </div>
-            <div class="col-lg-4">
-                <div class="input-group">
-                    <input class="inputResults form-control" type="" name="" placeholder="Busque otro producto...">                    
-                    <span class="input-group-btn">
-                <button class="resultsButton searchButton btn btn-warning" type="button"><a href="resultados.html">Buscar</a></button>
-                </span>
+            <div clas="row">
+            <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="input-group my-group">
+                        <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select a lunch ...">
+                            <option>Quiero</option>
+                            <option>Tengo</option>
+                            <option>Todo</option>
+                        </select>
+                        <input type="text" class="inputResults form-control" name="snpid" placeholder="Buscar productos..." />
+                        <span class="input-group-btn">
+                <button class="resultsButton searchButton btn btn-warning my-group-button" type="submit">Buscar</button>
+            </span>
+                    </div>
                 </div>
+                <div class="col-md-4"></div>
             </div>
             <div class="col-lg-4">
                 <div class="container-fluid">
@@ -152,7 +160,7 @@
             </div>
         </div>
     </header>
-    <div class="inputResults container">        
+    <div class="inputResults container">
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
