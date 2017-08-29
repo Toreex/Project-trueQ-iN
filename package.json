@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/Toreex/Project-trueQ-iN#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "mongoose": "^4.11.9",
     "pug": "^2.0.0-rc.3"
   },
   "devDependencies": {
