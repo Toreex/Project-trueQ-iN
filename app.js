@@ -83,7 +83,7 @@ app.put('/user-profile/:id', (req, res) => {
   const id = req.params.id
   const reserved = req.body.reserved
   console.log(reserved)
-  Product.findByIdAndUpdate(id, reserved)
+  Product.findByIdAndUpdate(id, {reserved})
   .then(() => res.send(` element w/ id ${id} has been reserved`))
 })
 

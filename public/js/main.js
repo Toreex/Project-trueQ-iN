@@ -17,9 +17,9 @@ $('.thumbnail').on('click', '.orderProduct', function (e) {
   const idProduct = $(this).data('id')
   const url = `/user-profile/${idProduct}`
   const method = 'PUT'
-  const reserved = { reserved: true }
+  const data = { reserved: true }
 
-  $.ajax({ url, method, reserved })
+  $.ajax({ url, method, data })
     .then(msg => {
       $(this).closest('.thumbnail').addClass('product-reserved')
       console.log('pase por ajax !!' + msg)
