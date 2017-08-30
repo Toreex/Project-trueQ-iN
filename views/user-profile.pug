@@ -17,7 +17,7 @@ block content
                     |                         
                     ul.dropdown-menu
                       li
-                        a(href='perfil-user') Ver perfil
+                        a(href='user-profile') Ver perfil
                       |                             
                       li
                         a(href='user-product') Subir producto
@@ -98,53 +98,22 @@ block content
               .panel-body
                 .row
                   .col-lg-12
-                    .col-sm-6.col-md-4
-                      .thumbnail
-                        img(style='background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRReUKXBV9h9n0ueWvl0bjj8Vtj11Zt_fAmZ7sPG_X0gKb92mVYNw)', src='', alt='')
-                        |                                     
-                        .caption
-                          h3 Sofa chester
-                          |                                         
-                          p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quos, consectetur quidem, delectus labore laboriosam est distinctio assumenda id a magnam excepturi enim eligendi voluptates hic rerum dolore officia maxime.
-                          |                                         
-                          .buttonsMyProducts
-                            a.btn.btn-primary(href='product-info', role='button') Mas info
-                            |                                         
-                            a.btn.btn-warning(href='#', role='button') Reservar
-                            |                                         
-                            a.btn.btn-danger(href='#', role='button') Eliminar
-                    |                             
-                    .col-sm-6.col-md-4
-                      .thumbnail
-                        img(style='background-image: url(https://psmedia.playstation.com/is/image/psmedia/ps4-pro-screen-02-eu-06sep16?$MediaCarousel_SmallImage$)', src='', alt='')
-                        |                                     
-                        .caption
-                          h3 Ps4 Pro
-                          |                                         
-                          p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam eveniet veritatis, deleniti natus, voluptatibus qui culpa obcaecati minus aut veniam eum nostrum vero cum, aspernatur repellat dicta modi vel!
-                          |                                         
-                          .buttonsMyProducts
-                            a.btn.btn-primary(href='product-info', role='button') Mas info
-                            |                                         
-                            a.btn.btn-warning(href='#', role='button') Reservar
-                            |                                         
-                            a.btn.btn-danger(href='#', role='button') Eliminar
-                    |                             
-                    .col-sm-6.col-md-4
-                      .thumbnail
-                        img(style='background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIMEs9TmnSbp-5QWUa_IihGGjCt6tqMHVAOgiCKKX-PN2EmjX)', src='', alt='')
-                        |                                     
-                        .caption
-                          h3 Taladro
-                          |                                         
-                          p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque reiciendis sequi, voluptatibus dolorum aperiam eius, incidunt voluptate officia! Ipsa at assumenda earum deleniti dignissimos vitae doloremque impedit praesentium, quo magnam.
-                          |                                         
-                          .buttonsMyProducts
-                            a.btn.btn-primary(href='product-info', role='button') Mas info
-                            |                                         
-                            a.btn.btn-warning(href='#', role='button') Reservar
-                            |                                         
-                            a.btn.btn-danger(href='#', role='button') Eliminar
+                    if (products)
+                      each product in products
+                        .col-sm-6.col-md-4               
+                            .thumbnail.productPerfil                          
+                              img(style='background-image: url('+ product.image +')')
+                              |                                     
+                              .caption
+                                h3 #{product.title}
+                                |                                         
+                                p
+                                  | #{product.description}
+                                |                                         
+                                .buttonsMyProducts
+                                  a.btn.btn-primary(href='product-info', role='button') Mas info
+                                  |                                         
+                                  button.orderProduct.btn.btn-warning(data-id=product._id, role='button') Reservar
+                                  |                                         
+                                  button.remove.btn.btn-danger(data-id=product._id, role='button') Eliminar
+                            |

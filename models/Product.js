@@ -18,6 +18,10 @@ var ProductsSchema = new mongoose.Schema({
   image: {
     type: String,
     required: true
+  },
+  reserved: {
+    type: Boolean,
+    default: false
   }
 }, { collection })
 

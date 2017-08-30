@@ -4,6 +4,19 @@ html body {
 
 }
 
+.productPerfil:hover, .productPerfil:active {
+    -webkit-transition:-webkit-transform 0.2s ease-out;
+    -moz-transition:-moz-transform 0.2s ease-out;
+    -o-transition:-o-transform 0.2s ease-out;
+    -ms-transition:-ms-transform 0.2s ease-out;
+    transition:transform 0.2s ease-out;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .buttonSearch {
     border-radius: 4px!important;
 }
@@ -98,6 +111,10 @@ img {
     background-size: cover;
     background-position: center center;
 
+}
+
+.product-reserved {
+    background-color:rgba(255,153,0,0.5)!important;
 }
 
 .moreInfoImg {
