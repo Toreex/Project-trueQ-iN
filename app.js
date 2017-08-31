@@ -23,7 +23,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/results', (req, res) => {
-  res.render('results')
+  Product.find().exec((err, products) => {
+    if (err) throw err
+    console.log(products)
+
+    res.render('results', { products })
+  })
 })
 
 app.get('/enter', (req, res) => {
@@ -88,6 +93,7 @@ app.put('/user-profile/:id', (req, res) => {
 })
 
 mongoose.connect(URL_DB, { useMongoClient: true })
+
 console.log(`----- connect to db ` + URL_DB + ` -----`)
 
 // app.use('/Products', routesProducts)

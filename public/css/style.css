@@ -113,8 +113,12 @@ img {
 
 }
 
-.product-reserved {
+.product-reservedPerfil {
     background-color:rgba(255,153,0,0.5)!important;
+}
+
+.product-reservedResults {
+    background-color:#FFCC7F!important;
 }
 
 .moreInfoImg {

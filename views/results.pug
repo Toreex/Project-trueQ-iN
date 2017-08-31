@@ -32,80 +32,19 @@ block content
 
     .inputResults.container
       .row
-        .col-sm-6.col-md-4
-          .thumbnail
-            img(style='background-image: url(https://psmedia.playstation.com/is/image/psmedia/ps4-pro-screen-02-eu-06sep16?$MediaCarousel_SmallImage$)', src='', alt='')
-            |                     
-            .caption
-              h3 Ps4 Pro
-              |                         
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
-              |                         
-              p
-                a.btn.btn-primary(href='product-info', role='button') Mas info
-        |             
-        .col-sm-6.col-md-4
-          .thumbnail
-            img(style='background-image: url(http://www.three.co.uk/static/images/device_pages/MobileVersion/Apple/iPhone_6s_Plus/Space_Grey/desktop/1.jpg)', src='', alt='')
-            |                     
-            .caption
-              h3 iPhone 6s
-              |                         
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
-              |                         
-              p
-                a.btn.btn-primary(href='product-info', role='button') Mas info
-        |             
-        .col-sm-6.col-md-4
-          .thumbnail
-            img(style='background-image: url(https://images-na.ssl-images-amazon.com/images/I/61oN2OMOq9L._SX355_.jpg)', src='', alt='')
-            |                     
-            .caption
-              h3 Unicornio hinchable
-              |                         
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
-              |                         
-              p
-                a.btn.btn-primary(href='product-info', role='button') Mas info
-        |             
-        .col-sm-6.col-md-4
-          .thumbnail
-            img(style='background-image: url(http://www.todocapricho.es/WebRoot/ce_es/Shops/194994/4B60/2DAE/3137/E975/B652/C0A8/8008/8212/KEWPIE_hoppy.jpg)', src='', alt='')
-            |                     
-            .caption
-              h3 Famosa mu&ntilde;eca Kewpie
-              |                         
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
-              |                         
-              p
-                a.btn.btn-primary(href='product-info', role='button') Mas info
-        |             
-        .col-sm-6.col-md-4
-          .thumbnail
-            img(style='background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIMEs9TmnSbp-5QWUa_IihGGjCt6tqMHVAOgiCKKX-PN2EmjX)', src='', alt='')
-            |                     
-            .caption
-              h3 Taladro
-              |                         
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
-              |                         
-              p
-                a.btn.btn-primary(href='product-info', role='button') Mas info
-        |             
-        .col-sm-6.col-md-4
-          .thumbnail
-            img(style='background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRReUKXBV9h9n0ueWvl0bjj8Vtj11Zt_fAmZ7sPG_X0gKb92mVYNw)', src='', alt='')
-            |                     
-            .caption
-              h3 Sofa chester
-              |                         
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
-              |                         
-              p
-                a.btn.btn-primary(href='product-info', role='button') Mas info
+        if (products)
+          each product in products
+            .col-sm-6.col-md-4
+              .thumbnail.productPerfil(class=product.reserved ? "product-reservedResults" : "")
+
+                img(style='background-image: url('+ product.image +')')
+                |                     
+                .caption
+                  h3 #{product.title}
+                  |                         
+                  p
+                    | #{product.description}
+                  |                         
+                  p
+                    a.btn.btn-primary(href='product-info', role='button') Mas info
+            
