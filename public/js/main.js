@@ -25,9 +25,6 @@ $('.thumbnail').on('click', '.orderProduct', function (e) {
 
   $.ajax({ url, method, data })
     .then(msg => {
-      if (data.reserved)
-        element.addClass('product-reserved')
-      else
-        element.removeClass('product-reserved')
+      if (data.reserved) { element.addClass('product-reserved') } else { element.removeClass('product-reserved') }
     })
 })
