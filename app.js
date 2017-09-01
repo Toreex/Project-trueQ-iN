@@ -88,7 +88,7 @@ app.delete('/product/:id', (req, res) => {
 app.put('/product/:id', (req, res) => {
   const id = req.params.id
   const reserved = req.body.reserved
-  
+
   Product.findByIdAndUpdate(id, {reserved})
   .then(() => res.send(` element w/ id ${id} has been reserved`))
 })
