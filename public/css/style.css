@@ -113,12 +113,12 @@ img {
 
 }
 
-.product-reserved {
+.product-reserved .caption {
     background-color:#FFCC7F!important;
     background-image: url(https://www.salin-medicair.de/wp-content/themes/medicare/images/r-logo.PNG);
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: bottom;      
+    background-size: 12%;
+    background-position:245px 12px;     
 }
 
 .moreInfoImg {
