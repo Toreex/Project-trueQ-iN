@@ -50,10 +50,9 @@ block content
                           h4.modal-title Enviar mensaje al usuario...
                         |                                     
                         .modal-body
-                          textarea(rows='4', cols='45')
-                            | At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-                        |                                     
-                        button.buttonMensaje.btn.btn-success Enviar
-                  |                         
-                  a.btn.btn-warning(href='#', role='button') Salir
-                  p
+                          form(method='POST', action='http://formspree.io/t_didac18@hotmail.com')
+                              input(type='email', name='email', placeholder='Your email') 
+                              textarea(name='message', placeholder='Your message')
+                              |   
+                              button.sendMessage.btn.btn-warning(type='submit') Enviar
+                              a.btn.btn-warning(href='product-info', role='button') Salir
