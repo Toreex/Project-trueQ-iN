@@ -48,11 +48,12 @@ block content
                           button.close(type='button', data-dismiss='modal') &times;
                           |                                         
                           h4.modal-title Enviar mensaje al usuario...
-                        |                                     
-                        .modal-body
+                        
                           form(method='POST', action='http://formspree.io/t_didac18@hotmail.com')
-                              input(type='email', name='email', placeholder='Your email') 
-                              textarea(name='message', placeholder='Your message')
-                              |   
-                              button.sendMessage.btn.btn-warning(type='submit') Enviar
-                              a.btn.btn-warning(href='product-info', role='button') Salir
+                        .form-group
+                          input.inputMessage.form-control(type='email', name='email', placeholder='Your email')
+                        .form-group
+                          textarea.textareaMargin.form-control(name='message', placeholder='Your message')
+                          |   
+                          button.sendMessage.btn.btn-warning(type='submit') Enviar
+                          a.exitMesage.btn.btn-warning(href='product-info', role='button') Salir

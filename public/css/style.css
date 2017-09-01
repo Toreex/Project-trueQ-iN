@@ -186,8 +186,20 @@ img {
     margin-left: 5%;
 }
 
-.sendMessage {
-    margin-right: 2px;
+.sendMessage .exitMesage {
+  float: right;
+
+}
+
+.textareaMargin {
+    width:60%!important;
+    margin-bottom: 10px;
+
+}
+
+.inputMessage {
+    width: 60%!important;
+    margin-top: 10px; 
 }
 
 
