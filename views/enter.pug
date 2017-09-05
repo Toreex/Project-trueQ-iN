@@ -17,7 +17,7 @@ block content
     .container-fluid
         .row
             .divUser.col-md-6.col-md-offset-3
-              form.form-horizontal(role='form')
+              form.form-horizontal(role='form', action='/login', method='POST')
                 fieldset
                   legend Entrar a TrueQ-iN
                   |                         
@@ -25,17 +25,15 @@ block content
                     label.col-sm-2.control-label(for='textinput') Alias
                     |                             
                     .col-sm-10
-                      input.form-control(type='text', placeholder='Alias...')
+                      input.form-control(type='text', name='username', placeholder='Alias...')
                   |                         
                   .form-group
                     label.col-sm-2.control-label(for='textinput') Password
                     |                             
                     .col-sm-10
-                      input.form-control(type='password', placeholder='Password...')
+                      input.form-control(type='password', name='password', placeholder='Password...')
                   |                         
                   .form-group
                     .col-sm-offset-2.col-sm-10
-                      .pull-right
-                        button.btn.btn-danger(type='submit') Cancelar
-                        |                                     
-                        a.btn.btn-success(href='user-in', type='submit') Entrar
+                      .pull-right       
+                        button.btn.btn-success(type='submit') Entrar

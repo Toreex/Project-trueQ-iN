@@ -3,10 +3,7 @@ const passportLocalMongoose = require('passport-local-mongoose')
 const Schema = mongoose.Schema
 
 const UserSchema = new Schema({})
-  alias: {
-    type: String,
-    required: true
-  },
+
 UserSchema.plugin(passportLocalMongoose)
 
 module.exports = mongoose.model('User', UserSchema)

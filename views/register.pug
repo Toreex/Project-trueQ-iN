@@ -16,7 +16,7 @@ block content
     .container-fluid
         .row
             .divUser.col-md-6.col-md-offset-3
-              form.form-horizontal(role='form')
+              form.form-horizontal(role='form', action='/register', method='POST')
                 fieldset
                   legend Registrar
                   |                         
@@ -24,29 +24,21 @@ block content
                     label.col-sm-2.control-label(for='textinput') Alias
                     |                             
                     .col-sm-10
-                      input.form-control(type='text', placeholder='Alias...')
+                      input.form-control(type='text', name='username', placeholder='Alias...')
                   |                         
                   .form-group
                     label.col-sm-2.control-label(for='textinput') Email
                     |                             
                     .col-sm-10
-                      input.form-control(type='mailto', placeholder='e-mail...')
+                      input.form-control(type='mailto', name='email', placeholder='e-mail...')
                   |                         
                   .form-group
                     label.col-sm-2.control-label(for='textinput') Password
                     |                             
                     .col-sm-10
-                      input.form-control(type='password', placeholder='Password...')
-                  |                         
-                  .form-group
-                    label.col-sm-2.control-label(for='textinput') Repetir Password
-                    |                             
-                    .col-sm-10
-                      input.form-control(type='password', placeholder='Password...')
+                      input.form-control(type='password', name='password', placeholder='Password...')
                   |                         
                   .form-group
                     .col-sm-offset-2.col-sm-10
                       .pull-right
-                        button.btn.btn-danger(type='submit') Cancelar
-                        |                                     
-                        a.btn.btn-success(href='enter', type='submit') Enviar
+                        button.btn.btn-success(href='enter', type='submit') Enviar
