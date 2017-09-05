@@ -1,0 +1,3 @@
+mongoexport -d truequin -c products --jsonArray -o data/products.json
+
+mongoimport -d truequin -c products --jsonArray --file data/products.json
