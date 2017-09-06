@@ -29,13 +29,13 @@ block content
         .row
             .col-md-6.col-md-offset-3
               .thumbnail
-                img.moreInfoImg(style='background-image: url(https://images-na.ssl-images-amazon.com/images/I/61oN2OMOq9L._SX355_.jpg)')
+                img.moreInfoImg(style='background-image: url('+ product.image +')')
                 |                     
                 .caption
-                  h3 Unicornio hinchable
+                  h3 #{product.title}
                   |                         
                   p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate deserunt, suscipit hic fugiat ab tempore praesentium aperiam vitae, velit, quos dignissimos eveniet, accusantium inventore modi ea? Illo tempore maiores adipisci?
+                    | #{product.description}
                   |                         
                   button.btn.btn-warning(type='button', data-toggle='modal', data-target='#myModal')
                     span.glyphicon.glyphicon
