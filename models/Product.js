@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+// const ObjectId = mongoose.Schema.Types.ObjectId
 const collection = 'products'
 
 var ProductsSchema = new mongoose.Schema({
@@ -22,6 +22,9 @@ var ProductsSchema = new mongoose.Schema({
   reserved: {
     type: Boolean,
     default: false
+  },
+  userName: {
+    type: String
   }
 }, { collection })
 

@@ -12,7 +12,7 @@ block content
                 .container-fluid
                   ul.navbar-right
                     a.btn-lg.butEntReg.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
-                      | Don Trueque85 
+                      | #{username} 
                       b.caret
                     |                         
                     ul.dropdown-menu
@@ -23,7 +23,7 @@ block content
                         a(href='user-product') Subir producto
                       |                             
                       li
-                        a(href='/') Salir
+                        a(href='/logout') Salir
 
     .container.perfilUser
         .row
@@ -34,11 +34,11 @@ block content
                     img.img-rounded.img-responsive.imgPerfil(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yCogXhtbzlRDgQPifTaDfmkTROUhTWwekYILkRQ93dMJaR-VQg', draggable='false')
                   |                         
                   .col-lg-6.col-md-6.col-xs-6
-                    h1 Walter White
+                    h1 #{username}
                     |                             
                     h3
                       i.glyphicon.glyphicon-envelope
-                      |  heisenberg@gmail.com
+                      |  #{email}
                   |                         
                   div
                     button.btn-lg.btn.btn-warning.buttonPerfilSeparate(data-toggle='modal', data-target='#myModal') Cambiar datos de usuario
@@ -111,7 +111,7 @@ block content
                                   | #{product.description}
                                 |                                         
                                 .buttonsMyProducts
-                                  a.btn.btn-primary(href='product-info', role='button') Mas info
+                                  a.btn.btn-primary(href='product-info/'+ product._id), role='button') Mas info
                                   |                                         
                                   button.orderProduct.btn.btn-warning(data-id=product._id, role='button') Reservar
                                   |                                         

@@ -16,7 +16,7 @@ router.get('/results', getProducts)
 router.get('/register', getRegister)
 router.get('/user-product', getUserProduct)
 router.get('/user-in', getUserIn)
-router.get('/product-info', getProductInfo)
+router.get('/product-info/:_id', getProductInfo)
 router.get('/user-profile', getUserProfile)
 
 module.exports = router
