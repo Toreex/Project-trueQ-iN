@@ -2,34 +2,34 @@ extends layout
 
 block content
     .more-info.container-fluid
-        .row
-            .col-md-6.col-md-offset-3
-              .thumbnail
-                img.moreInfoImg(style='background-image: url('+ product.image +')')
-                |                     
-                .caption
-                  h3 #{product.title}
-                  |                         
-                  p
-                    | #{product.description}
-                  |                         
-                  button.btn.btn-warning(type='button', data-toggle='modal', data-target='#myModal')
-                    span.glyphicon.glyphicon
-                    | Mensaje
-                  |                         
-                  #myModal.modal.fade(role='dialog')
-                    .modal-dialog
-                      .modal-content.messagePadding
-                        .modal-header
-                          button.close(type='button', data-dismiss='modal') &times;
-                          |                                         
-                          h4.modal-title Enviar mensaje al usuario...
-                        
-                          form(method='POST', action='https://formspree.io/t_didac18@hotmail.com')
-                            .form-group
-                            input.inputMessage.form-control(type='email', name='email', placeholder='Your email')
-                            .form-group
-                            textarea.textareaMargin.form-control(name='message', placeholder='Your message')
-                            |   
-                            button.btn.btn-warning(type='submit') Enviar
-                            a.btn.btn-warning(href='product-info', role='button') Salir
+      .row
+        .col-md-6.col-md-offset-3
+          .thumbnail
+            img.moreInfoImg(style='background-image: url('+ product.image +')')
+            |                     
+            .caption
+              h3 #{product.title}
+              |                         
+              p
+                | #{product.description}
+              |                         
+              button.btn.btn-warning(type='button', data-toggle='modal', data-target='#myModal')
+                span.glyphicon.glyphicon
+                | Mensaje
+              |                         
+              #myModal.modal.fade(role='dialog')
+                .modal-dialog
+                  .modal-content.messagePadding
+                    .modal-header
+                      button.close(type='button', data-dismiss='modal') &times;
+                      |                                         
+                      h4.modal-title Enviar mensaje al usuario...
+                    
+                      form(method='POST', action='https://formspree.io/t_didac18@hotmail.com')
+                        .form-group
+                        input.inputMessage.form-control(type='email', name='email', placeholder='Your email')
+                        .form-group
+                        textarea.textareaMargin.form-control(name='message', placeholder='Your message')
+                        |   
+                        button.btn.btn-warning(type='submit') Enviar
+                        a.btn.btn-warning(href='product-info', role='button') Salir
