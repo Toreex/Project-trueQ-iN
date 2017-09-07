@@ -1,30 +1,29 @@
 const User = require('../../../models/User')
-const Product = require('../../../models/Product')
 var jwt = require('jsonwebtoken')
 
 function getIndex (req, res) {
-  const token = req.session.token
+  // const token = req.session.token
 
-  console.log('token', token)
+  // console.log('token', token)
 
-  try {
-    const decoded = jwt.verify(token, process.env.SECRET)
-    console.log(decoded)
+  // try {
+  //   const decoded = jwt.verify(token, process.env.SECRET)
+  //   console.log(decoded)
 
-    const username = decoded.username
+  //   const username = decoded.username
 
-    User.find({ username }, (err, user) => {
-      if (err) throw err
+  //   User.find({ username }, (err, user) => {
+  //     if (err) throw err
 
-      if (user) {
-        res.render('index')
-      } else {
-        res.render('index')
-      }
-    })
-  } catch (err) {
-    throw err
-  }
+  //     if (user) {
+  res.render('index')
+  //     } else {
+  //       res.render('index')
+  //     }
+  //   })
+  // } catch (err) {
+  //   throw err
+  // }
 }
 
 module.exports = getIndex
