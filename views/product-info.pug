@@ -5,13 +5,13 @@ block content
       .row
         .col-md-6.col-md-offset-3
           .thumbnail
-            img.moreInfoImg(style='background-image: url('+ product.image +')')
+            img.moreInfoImg(style='background-image: url('+ state.product.image +')')
             |                     
             .caption
-              h3 #{product.title}
+              h3 #{state.product.title}
               |                         
               p
-                | #{product.description}
+                | #{state.product.description}
               |                         
               button.btn.btn-warning(type='button', data-toggle='modal', data-target='#myModal')
                 span.glyphicon.glyphicon

@@ -3,8 +3,8 @@ extends layout
 block content
     .inputResults.container
       .row
-        if (products)
-          each product in products
+        if (state.products)
+          each product in state.products
             .col-sm-6.col-md-4
               .thumbnail.productPerfil(class=product.reserved ? "product-reserved" : "")
 

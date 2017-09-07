@@ -4,7 +4,7 @@ const Product = require('../../../models/Product')
 function getSearch (req, res) {
   const token = req.session.token
 
-  controlLogin(token, function (err, user) {
+  controlLogin(token, function (err, state) {
     const title = req.query.title
 
     Product.find({ title: new RegExp(title, 'i') })
@@ -14,10 +14,9 @@ function getSearch (req, res) {
 
               if (products.length === 0) return res.send('no se encuentran resultados')
 
-              const loggedIn = !!user
-              const username = user ? user.username : undefined
+              state.products = products
 
-              res.render('results', { loggedIn, username, products })
+              res.render('results', { state })
             })
   })
 }

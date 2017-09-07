@@ -1,20 +1,13 @@
-const User = require('../../../models/User')
 const controlLogin = require('../../common/controlLogin')
 
-function getUserProduct (req, res) {
-  const token = req.session.token
+function getUserProduct(req, res) {
+    const token = req.session.token
 
-  controlLogin(token, function (err, user) {
-    if (err) throw err
-    User.find().exec((err) => {
-      if (err) throw err
+    controlLogin(token, function(err, state) {
+        if (!state.loggedIn) return res.redirect('/enter')
 
-      const loggedIn = !!user
-      const username = user ? user.username : undefined
-
-      res.render('user-product', { loggedIn, username })
+        res.render('user-product', { state })
     })
-  })
 }
 
 module.exports = getUserProduct

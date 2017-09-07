@@ -23,17 +23,17 @@ header.header.container-fluid
                 button.buttonSearch.btn.btn-warning.my-group-button(type='submit') Buscar
       |             
       .col-md-3         
-        if loggedIn    
+        if state.loggedIn    
           ul.navbar-right
             a.btn-lg.butEntReg.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
-             | #{username} 
+             | #{state.user.username} 
             b.caret                       
             ul.dropdown-menu
               li
-                a(href='user-profile') Ver perfil
+                a(href='/user-profile') Ver perfil
                 |         
               li
-                a(href='user-product') Subir producto
+                a(href='/user-product') Subir producto
                 |         
               li
                 a(href='/logout') Salir                  

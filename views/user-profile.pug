@@ -10,11 +10,11 @@ block content
                     img.img-rounded.img-responsive.imgPerfil(src='http://heimat.bz/wp-content/uploads/2015/12/egarter_02.png', draggable='false')
                   |                         
                   .col-lg-6.col-md-6.col-xs-6
-                    h1 #{username}
+                    h1 #{state.user.username}
                     |                             
                     h3
                       i.glyphicon.glyphicon-envelope
-                      |  #{email}
+                      |  #{state.user.email}
                   |                         
                   div
                     button.btn-lg.btn.btn-warning.buttonPerfilSeparate(data-toggle='modal', data-target='#myModal') Cambiar datos de usuario
@@ -74,8 +74,8 @@ block content
               .panel-body
                 .row
                   .col-lg-12
-                    if (products)
-                      each product in products
+                    if (state.products)
+                      each product in state.products
                         .col-sm-6.col-md-4          
                             .thumbnail.productPerfil(class=product.reserved ? "product-reserved" : "")                          
                               img(style='background-image: url('+ product.image +')')

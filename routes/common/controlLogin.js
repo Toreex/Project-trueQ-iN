@@ -4,6 +4,10 @@ var jwt = require('jsonwebtoken')
 function controlLogin (token, callback) {
   console.log('token', token)
 
+  const state = {
+      loggedIn: false
+  }
+
   try {
     const decoded = jwt.verify(token, process.env.SECRET)
     console.log(decoded)
@@ -11,16 +15,15 @@ function controlLogin (token, callback) {
     const username = decoded.username
 
     User.findOne({ username }, (err, user) => {
-      if (err) throw err
-
       if (user) {
-        callback(undefined, user)
-      } else {
-        callback('username not found')
+          state.loggedIn = true
+          state.user = user
       }
+      
+      callback(err, state)      
     })
   } catch (err) {
-    callback(err)
+    callback(err, state)
   }
 }
 
