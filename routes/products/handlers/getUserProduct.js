@@ -1,34 +1,20 @@
 const User = require('../../../models/User')
-const Product = require('../../../models/Product')
-var jwt = require('jsonwebtoken')
+const controlLogin = require('../../common/controlLogin')
 
 function getUserProduct (req, res) {
   const token = req.session.token
 
-  console.log('token', token)
-
-  try {
-    const decoded = jwt.verify(token, process.env.SECRET)
-    console.log(decoded)
-
-    const username = decoded.username
-
-    User.find({ username }, (err, user) => {
+  controlLogin(token, function (err, user) {
+    if (err) throw err
+    User.find().exec((err) => {
       if (err) throw err
 
-      if (user) {
-        Product.find().exec((err, products) => {
-          if (err) throw err
+      const loggedIn = !!user
+      const username = user ? user.username : undefined
 
-          res.render('user-product')
-        })
-      } else {
-              res.redirect('/enter')
-      }
+      res.render('user-product', { loggedIn, username })
     })
-  } catch (err) {
-    throw err
-  }
+  })
 }
 
 module.exports = getUserProduct
