@@ -16,19 +16,34 @@ block content
                     option Tengo
                     |                                 
                     option Todo
-                |                     
-                .col-md-4
-                  input.form-control(type='text', name='snpid', placeholder='Buscar productos...')
-                |                     
-                .col-md-4
-                  span.input-group-btn
-                    button.buttonSearch.btn.btn-warning.my-group-button(type='submit') Buscar
+                |
+                form(method="GET", action="/search")                     
+                  .col-md-4
+                    input.form-control(type='text', name='title', placeholder='Buscar productos...')
+                  |                     
+                  .col-md-4
+                    span.input-group-btn
+                      button.buttonSearch.btn.btn-warning.my-group-button(type='submit') Buscar
             |             
-            .col-md-3
-              .container-fluid.divLogin
-                a.butEntReg2.btn.btn-warning.btn-lg(href='register') Registro
-                |                     
-                a.butEntReg2.btn.btn-warning.btn-lg(href='enter') Entrar
+            .col-md-3              
+              .divLogin
+                ul.navbar-right
+                  a.btn-lg.butEntReg.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
+                   | #{username} 
+                  b.caret                       
+                  ul.dropdown-menu
+                    li
+                      a(href='user-profile') Ver perfil
+                      |         
+                    li
+                      a(href='user-product') Subir producto
+                      |         
+                    li
+                      a(href='/logout') Salir                  
+              .container-fluid.divNoLogin
+                a.butEntReg2.btn.btn-warning.btn-lg(href='/registro.html') Registro
+                |       
+                a.butEntReg2.btn.btn-warning.btn-lg(href='/entrar.html') Entrar
 
     .inputResults.container
       .row

@@ -13,17 +13,13 @@ block content
               a.butEntReg.btn.btn-warning.btn-lg(href='enter') Entrar
 
     .fotoBodyIndex.inputSearch.container-fluid
-        .row
-            .col-lg-2
-            |             
-            .col-lg-8
-              p.subTitle &iexcl; Cambia lo que no uses y consigue lo que siempre quisiste !
-              |                 
-              .input-group
-                input.input-lg.inputLine.form-control(autofocus='', type='text', placeholder='Busque productos para intercambiar...')
-                |                     
+      .row
+        .col-lg-2
+        .col-lg-8
+            p.subTitle ¡ Cambia lo que no uses y consigue lo que siempre quisiste !
+            .input-group
+              form(method="GET", action="/search")
+                input.input-lg.inputLine.form-control(name="title", autofocus="", type="text", placeholder="Busque productos para intercambiar...")
                 span.input-group-btn
-                  button.btn-lg.searchButton.btn.btn-warning(type='button')
-                    a(href='results') Buscar
-            |             
-            .col-lg-2
+                  button.btn-lg.searchButton.btn.btn-warning(type="submit") Buscar
+        .col-lg-2

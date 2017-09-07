@@ -3,7 +3,7 @@ const Product = require('../../../models/Product')
 var jwt = require('jsonwebtoken')
 
 function getUserProduct (req, res) {
-	    const token = req.session.token
+  const token = req.session.token
 
   console.log('token', token)
 
@@ -23,7 +23,7 @@ function getUserProduct (req, res) {
           res.render('user-product')
         })
       } else {
-            	res.redirect('/enter')
+              res.redirect('/enter')
       }
     })
   } catch (err) {
