@@ -16,7 +16,11 @@ function getIndex (req, res) {
   //     if (err) throw err
 
   //     if (user) {
-  res.render('index')
+
+  const username = 'man'
+  const loggedIn = !true
+
+  res.render('index', { loggedIn, username })
   //     } else {
   //       res.render('index')
   //     }

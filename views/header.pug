@@ -22,8 +22,8 @@ header.header.container-fluid
               span.input-group-btn
                 button.buttonSearch.btn.btn-warning.my-group-button(type='submit') Buscar
       |             
-      .col-md-3              
-        .divLogin
+      .col-md-3         
+        if loggedIn    
           ul.navbar-right
             a.btn-lg.butEntReg.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
              | #{username} 
@@ -37,7 +37,8 @@ header.header.container-fluid
                 |         
               li
                 a(href='/logout') Salir                  
-        .container-fluid.divNoLogin
-          a.butEntReg2.btn.btn-warning.btn-lg(href='/registro.html') Registro
-          |       
-          a.butEntReg2.btn.btn-warning.btn-lg(href='/entrar.html') Entrar
+        else
+          .container-fluid
+            a.butEntReg2.btn.btn-warning.btn-lg(href='/register') Registro
+            |       
+            a.butEntReg2.btn.btn-warning.btn-lg(href='/enter') Entrar
