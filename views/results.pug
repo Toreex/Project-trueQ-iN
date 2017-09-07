@@ -1,50 +1,6 @@
 extends layout
 
 block content
-    header.header.container-fluid
-        .row
-            .col-md-3.titleResults
-              a(href='/')
-                h1.title TrueQ-iN
-            |             
-            .col-md-6.search-header
-              .row
-                .col-md-4
-                  select#lunch.selectpicker.form-control(data-live-search='true', title='...')
-                    option Quiero
-                    |                                 
-                    option Tengo
-                    |                                 
-                    option Todo
-                |
-                form(method="GET", action="/search")                     
-                  .col-md-4
-                    input.form-control(type='text', name='title', placeholder='Buscar productos...')
-                  |                     
-                  .col-md-4
-                    span.input-group-btn
-                      button.buttonSearch.btn.btn-warning.my-group-button(type='submit') Buscar
-            |             
-            .col-md-3              
-              .divLogin
-                ul.navbar-right
-                  a.btn-lg.butEntReg.btn.btn-warning.dropdown-toggle(data-toggle='dropdown')
-                   | #{username} 
-                  b.caret                       
-                  ul.dropdown-menu
-                    li
-                      a(href='user-profile') Ver perfil
-                      |         
-                    li
-                      a(href='user-product') Subir producto
-                      |         
-                    li
-                      a(href='/logout') Salir                  
-              .container-fluid.divNoLogin
-                a.butEntReg2.btn.btn-warning.btn-lg(href='/registro.html') Registro
-                |       
-                a.butEntReg2.btn.btn-warning.btn-lg(href='/entrar.html') Entrar
-
     .inputResults.container
       .row
         if (products)
