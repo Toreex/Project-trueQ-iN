@@ -1,41 +1,63 @@
-#trueQ-iN App
+[![NodeJS](https://github.com/MarioTerron/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
+[![ExpressJS](https://github.com/MarioTerron/logo-images/blob/master/logos/expressjs.png)](http://expressjs.com///)
+[![ES6](https://github.com/MarioTerron/logo-images/blob/master/logos/es6.png)](http://www.ecma-international.org/ecma-262/6.0/) 
+[![npm](https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png)](https://www.npmjs.com/)
+[![MongoDB](https://github.com/FransLopez/logo-images/blob/master/logos/mongodb.png)](https://www.mongodb.com/)
+![Monogoose](https://github.com/MarioTerron/logo-images/blob/master/logos/mongoose.png)
+[![HTML5,CSS3 and JS](https://github.com/FransLopez/logo-images/blob/master/logos/html5-css3-js.png)](http://www.w3.org/) 
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+# [TrueQ-iN](https://trueq-in.herokuapp.com/)
 
-Usuario entra en la web.
+---
 
-El usuario podra ver una primera pagina simple, minimalista con el nombre a la izquierda, y a la derecha los botones de entrar o Registro.
+## Instalación
 
-En el centro de la pantalla encontrara una imagen de fondo y el "input" con su boton de busqueda. 
+Necesitas tener instalado [NodeJS](https://nodejs.org/) con [npm](https://www.npmjs.com/), y [MongoDB](https://www.mongodb.com/)
 
-Al final de la pagina web podra ver el "footer" pie de paguina, donde vera informacion de la persona que creo esta web y alguna otra informacion como, copyright entre otras.
-
-
-Usuario hace una busqueda.
-
-El usuario al realizar una busqueda ("sin registrarse o iniciar sesion") accedera a una web con articulos separados por recuadros con una impagen principal con un titulo. En la parte izquierda podra ver los filtros para poder aplicar siempre que quiera. 
-
-El input de busqueda en esta ocasion se encuentra en la parte de arriba, el "header" por si quisiera hacer otra busqueda sin necesidad de ir hacia la pagina principal. Igualmente los botones de registro o entrar seguiran arriba a la derecha.
-
-
-Usuario clica en un articulo.
-
-El usuario al hacer click en un articulo vera dicho articulo en tamaño grande en la misma pagina web ocupando casi toda la parte central de la web, podra ver la imagen, el titulo , la descripcion y tendra opcion de poder enviar un mensaje via E-mail al usuario.
-
-Podra clicar en un button X o close para volver a la busqueda de antes.
+---
+### Configuración del archivo `env`
 
 
-Usuario entra a la web y quiere registrarse.
-
-El usuario cuando haga click en registrar le saldra un popup con las casillas:
-Usuario, Nombre, Apellido, Contraseña, Direccion e-mail y send o Enviar.
-cuando acabe el registro accedera a la web principal pero los botones seran cambiados por el nombre de Usuario.
+Debe crear un archivo **. env ** en la raíz del proyecto con las siguientes variables de entorno configuradas:
 
 
-Usuario entra en su cuenta.
+  ```
+  SECRET=XXXXXXXXXX
+  ```
+  
+---
 
-El usuario hara click en entrar y le saldra un popUp igual que el Registro pero con menos casillas, solo saldra:
-Usuario, contraseña, y send o enviar.
+### Para arrancar el servidor:
+
+```
+"start": "node app",
+"dev": "nodemon app"
+```
 
 
-Usuario quiere subir un producto
+## Construido con:
 
-El usuario cuando quiera subir un producto accedera a su perfil donde encontrara un boton para poder subir su producto, aparecera un popup para poder rellenarlo.
+dependencies:
+
+    "body-parser": "^1.17.2",
+    "cookie-session": "^1.3.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.2.1",
+    "pug": "^2.0.0-rc.3"
+
+devDependencies:
+````
+"nodemon": "^1.11.0"
+````
+
+
+## Autor:
+
+[Didac Tey Bosch](https://github.com/Toreex)
+
+
