@@ -8,7 +8,7 @@ block content
             .col-sm-6.col-md-4
               .thumbnail.productPerfil(class=product.reserved ? "product-reserved" : "")
 
-                img(style='background-image: url('+ product.image +')')
+                img.img-responsive(src=product.image)
                 |                     
                 .caption
                   h3 #{product.title}
