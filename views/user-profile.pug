@@ -77,7 +77,7 @@ block content
                     if (state.products)
                       each product in state.products
                         .col-sm-6.col-md-4          
-                            .thumbnail.productPerfil(class=product.reserved ? "product-reserved" : "")
+                            .thumbnail.productPerfil(class=product.reserved ? "product-reserved" : "")                          
                               img(style='background-image: url('+ product.image +')')
                               |                                     
                               .caption
@@ -92,3 +92,4 @@ block content
                                   button.orderProduct.btn.btn-warning(data-id=product._id, role='button') Reservar
                                   |                                         
                                   button.remove.btn.btn-danger(data-id=product._id, role='button') Eliminar
+                            |

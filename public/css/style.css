@@ -155,6 +155,11 @@ img {
     }
 }
 
+@media screen and (max-width: 736px) {
+    .titleResults {
+        display:none;
+    }
+}
 
 .perfilUser {
     margin-top: 5%;
