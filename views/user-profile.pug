@@ -17,7 +17,7 @@ block content
                       |  #{state.user.email}
                   |                         
                   div
-                    button.btn-lg.btn.btn-warning.buttonPerfilSeparate(data-toggle='modal', data-target='#myModal') Cambiar datos de usuario
+                    button.btn-lg.btn.btn-warning.buttonPerfilSeparate(disabled, data-toggle='modal', data-target='#myModal') Cambiar datos de usuario
                     |                             
                     #myModal.modal.fade(role='dialog')
                       .modal-dialog
@@ -42,7 +42,7 @@ block content
                             button.buttonChangePerfil.btn.btn-danger Cancelar
                   |                         
                   div
-                    button.btn-lg.btn.btn-warning(data-toggle='modal', data-target='#myModal2') Cambiar contrase&ntilde;a
+                    button.btn-lg.btn.btn-warning(disabled, data-toggle='modal', data-target='#myModal2') Cambiar contrase&ntilde;a
                     |                             
                     #myModal2.modal.fade(role='dialog')
                       .modal-dialog
