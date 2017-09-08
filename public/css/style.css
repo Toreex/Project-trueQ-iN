@@ -113,8 +113,8 @@ ul.dropdown-menu {
 }
 
 img {
-    width: 100%;
-  height: 300px !important;  
+    _width: 100%;
+    _height: 300px !important;  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
