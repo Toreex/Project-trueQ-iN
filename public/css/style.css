@@ -91,8 +91,10 @@ ul.dropdown-menu {
 }
 
 .footer {
-    clear: both;
-    /*position: fixed;*/
+    position: fixed;
+    left:0pc;
+    bottom: 0px;
+    width: 100%;
     border-top: 2px solid #FFB249;
     color: #FFB249;
     text-align: center; 
