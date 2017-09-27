@@ -11,8 +11,10 @@
 
 ---
 
-![screenshot](public/img/Home.jpg)
+![screenshot](public/img/home.jpg)
+-------------------------------------------------------------------------------
 ![screenshot](public/img/resultados.jpg)
+-------------------------------------------------------------------------------
 ![screenshot](public/img/perfilUser.jpg)
 
 ## Instalación
