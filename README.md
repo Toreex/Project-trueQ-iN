@@ -11,6 +11,10 @@
 
 ---
 
+![screenshot](public/img/Home.jpg)
+![screenshot](public/img/resultados.jpg)
+![screenshot](public/img/perfilUser.jpg)
+
 ## Instalación
 
 Necesitas tener instalado [NodeJS](https://nodejs.org/) con [npm](https://www.npmjs.com/), y [MongoDB](https://www.mongodb.com/)
